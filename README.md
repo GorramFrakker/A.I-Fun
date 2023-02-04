@@ -147,7 +147,7 @@ Write-Output "Mapped OneDrive: $OneDrive"
 Note: This script assumes that you have the necessary permissions to access the network drives, SharePoint sites, and OneDrive. You may also need to install the necessary modules, such as the SharePoint Online Management Shell, to run this script.
 
 
-Prompt:
+Prompt: Write the story of “Squirrel Squirrel Squirrel” and his adventures in death. Humorou
 Response:
 
 Prompt:
