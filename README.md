@@ -86,34 +86,4 @@ This is a simple example to get you started. You can build upon this basic app b
 
 
 Promt: Write a powershell script that mirror copies one. Location to another including permissions. Log results to a text file named file results.txt.
-Response: Here's a PowerShell script that mirrors a directory and its contents, including permissions, to another location and logs the results to a file named "file_results.txt":
-
-php
-
-$src = "C:\path\to\source"
-$dst = "C:\path\to\destination"
-$log = "C:\path\to\file_results.txt"
-
-Write-Output "Starting file copy from $src to $dst" | Out-File $log -Append
-
-$files = Get-ChildItem $src -Recurse
-foreach ($file in $files) {
-    $srcPath = Join-Path $src $file.FullName.Substring($src.Length + 1)
-    $dstPath = Join-Path $dst $file.FullName.Substring($src.Length + 1)
-    
-    Write-Output "Copying $srcPath to $dstPath" | Out-File $log -Append
-    try {
-        if ($file.PSIsContainer) {
-            New-Item -ItemType Directory -Path $dstPath | Out-Null
-        } else {
-            Copy-Item $srcPath $dstPath -Force
-        }
-        $acl = Get-Acl $srcPath
-        Set-Acl $dstPath $acl
-        Write-Output "Copied $srcPath to $dstPath successfully" | Out-File $log -Append
-    } catch {
-        Write-Output "Failed to copy $srcPath to $dstPath: $_" | Out-File $log -Append
-    }
-}
-
-Write-Output "Finished copying files from $src to $dst" | Out-File $log -Append=
+Response: 
