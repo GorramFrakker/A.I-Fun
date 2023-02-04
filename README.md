@@ -83,3 +83,6 @@ class ViewController: UIViewController {
 
 
 This is a simple example to get you started. You can build upon this basic app by adding more features or customizing the data storage to meet your specific requirements.
+
+
+Promt: Write a powershell script that mirror copies one. Location to another including permissions. Log results to a text file named file results.txt.
