@@ -120,6 +120,33 @@ Promt: Write a powershell script map
 Network drives, SharePoint sites, and onedrive.
 Response: Here's a sample PowerShell script that maps network drives, SharePoint sites, and OneDrive:
 
+# Map Network Drives
+New-PSDrive -Name "N" -PSProvider FileSystem -Root "\\server\share"
+New-PSDrive -Name "O" -PSProvider FileSystem -Root "\\server\share2"
+
+# Map SharePoint Sites
+$spSite = New-Object Microsoft.SharePoint.Client.Site -ArgumentList "https://tenant.sharepoint.com/sites/site1"
+$ctx = $spSite.Context
+$web = $spSite.RootWeb
+$ctx.Load($web)
+$ctx.ExecuteQuery()
+
+Write-Output "Mapped SharePoint site: $($web.Url)"
+
+# Map OneDrive
+$userName = "user@tenant.onmicrosoft.com"
+$password = ConvertTo-SecureString "password" -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential($userName, $password)
+$OneDrive = "https://tenant-my.sharepoint.com/personal/user_tenant_onmicrosoft_com"
+
+$session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $OneDrive -Credential $cred
+Import-PSSession $session
+
+Write-Output "Mapped OneDrive: $OneDrive"
+
+Note: This script assumes that you have the necessary permissions to access the network drives, SharePoint sites, and OneDrive. You may also need to install the necessary modules, such as the SharePoint Online Management Shell, to run this script.
+
+
 Prompt:
 Response:
 
