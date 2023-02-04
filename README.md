@@ -41,7 +41,7 @@ Start by creating a new Xcode project for an iOS single-view application.
 Add a UIWebView to your storyboard and connect it to your view controller as an outlet. This will allow you to display the company website within your app.
 In your view controller, use the following code to load the company website in the UIWebView:
 swift
-Copy code
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -55,6 +55,9 @@ class ViewController: UIViewController {
         webView.loadRequest(URLRequest(url: url))
     }
 }
+
+
+
 To store the data locally, you can use Core Data, which is a powerful and flexible framework for data management. First, add Core Data to your project and create a new entity to store the data. Then, in your view controller, use the following code to save the data to Core Data:
 swift
 Copy code
