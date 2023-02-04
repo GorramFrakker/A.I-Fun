@@ -166,10 +166,18 @@ Eventually, Squishy was given the opportunity to return to the world of the livi
 
 And that's the story of "Squirrel Squirrel Squirrel" and his adventures in death. A humorous tale of determination, laughter, and living
 
-Prompt:
-Response:
+Prompt: How to deploy an iPhone app to my company only.
+Response: to information such as specific company details, but I can provide a general guide on deploying an iPhone app to a specific company.
 
-Prompt:
+Create a Developer Enterprise Account: This account is necessary to deploy an app to a specific company. The cost is $299 per year.
+Build and sign the app using Xcode: Create the app using Xcode and sign it using the enterprise certificate.
+Create an enterprise distribution profile: Create a distribution profile using the enterprise account.
+Upload the app to a secure location: Upload the app to a secure server, such as a company intranet, or cloud storage.
+Distribute the app to employees: Distribute the app to employees through an MDM solution, such as AirWatch or MobileIron. Employees will then be able to download the app from the company's intranet or cloud storage and install it on their iPhones.
+Provide support: Make sure to provide support for employees who encounter issues with the app.
+It's important to keep in mind that distributing an app to a specific company only requires a strict adherence to Apple's enterprise distribution guidelines and the app must be specifically designed for the company's needs.
+
+Prompt: 
 Response:
 
 
