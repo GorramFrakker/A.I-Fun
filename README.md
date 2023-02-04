@@ -201,8 +201,46 @@ Select ".csv" as the file format and save the file to your desired location.
 Note: Depending on the text editor or spreadsheet program you are using, the steps to save the file as a .csv may vary slightly. 
 
 
-Promt:
-Response:
+Promt: Write a powershell script to load modules for Azure, exchange online, teams, SharePoint, and other Microsoft cloud services.
+Response: Here's a PowerShell script to load the modules for Azure, Exchange Online, Teams, SharePoint, and other Microsoft cloud services:
+
+# Load the Azure module
+if (!(Get-Module -Name AzureRM -ListAvailable)) {
+    Write-Host "Azure module not found. Installing now..."
+    Install-Module -Name AzureRM -Force
+} else {
+    Write-Host "Azure module found. Loading now..."
+    Import-Module AzureRM
+}
+
+# Load the Exchange Online module
+if (!(Get-Module -Name ExchangeOnlineManagement -ListAvailable)) {
+    Write-Host "Exchange Online module not found. Installing now..."
+    Install-Module -Name ExchangeOnlineManagement -Force
+} else {
+    Write-Host "Exchange Online module found. Loading now..."
+    Import-Module ExchangeOnlineManagement
+}
+
+# Load the Teams module
+if (!(Get-Module -Name MicrosoftTeams -ListAvailable)) {
+    Write-Host "Teams module not found. Installing now..."
+    Install-Module -Name MicrosoftTeams -Force
+} else {
+    Write-Host "Teams module found. Loading now..."
+    Import-Module MicrosoftTeams
+}
+
+# Load the SharePoint module
+if (!(Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ListAvailable)) {
+    Write-Host "SharePoint module not found. Installing now..."
+    Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Force
+} else {
+    Write-Host "SharePoint module found. Loading now..."
+    Import-Module Microsoft.Online.SharePoint.PowerShell
+}
+
+This script first checks if the modules are already installed on the system and if not, it installs them. After that, it imports the modules to make them available for use in the current session.
 
 Promt:
 Response:
