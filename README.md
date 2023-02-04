@@ -116,4 +116,7 @@ foreach ($file in $files) {
 
 Write-Output "Finished copying files from $src to $dst" | Out-File $log -Append
 
+Promt: Write a powershell script map
+Network drives, SharePoint sites, and onedrive.
+Response: Here's a sample PowerShell script that maps network drives, SharePoint sites, and OneDrive:
 
