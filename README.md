@@ -188,8 +188,17 @@ Test the app using the built-in simulator or a physical iOS device.
 Submit your app to the App Store for review and publication.
 It's recommended to have a solid understanding of programming concepts, object-oriented programming, and software development practices before attempting to develop an iOS app.
 
-Promt:
+Promt: How do I export all my Trello card into a .csv?
+export all of your Trello cards into a .csv, follow these steps:
 Response:
+Open your Trello board
+Click on the "Board Menu" in the top right corner of the page
+Select "More" and then "Export JSON"
+Save the file to your computer
+Open the file with a text editor or spreadsheet program, such as Microsoft Excel or Google Sheets
+Select "File" and then "Save As"
+Select ".csv" as the file format and save the file to your desired location.
+Note: Depending on the text editor or spreadsheet program you are using, the steps to save the file as a .csv may vary slightly. 
 
 
 Promt:
